@@ -10838,13 +10838,17 @@ textarea.form-control-lg {
   font-size: 4.5rem;
 }
 
+.caligraphy {
+  font-family: "Sacramento";
+  font-size: 5rem !important;
+}
+
 header.masthead {
   position: relative;
-  background-color: #343a40;
   background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 header.masthead:before {
   content: "";
