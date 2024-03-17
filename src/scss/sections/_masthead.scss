@@ -2,13 +2,8 @@
 // Masthead
 //
 
-.caligraphy {
-  font-family: 'Sacramento';
-  font-size: 5rem !important;
-}
-
 #header-text {
-    margin-top: 25%;
+    margin-top: 20%;
     margin-right: 8%;
     margin-left: 8%;
 
@@ -37,16 +32,8 @@ header.masthead {
         opacity: 0.5;
     }
 
-    h1 {
-        font-size: 3rem;
-    }
-
     @media (min-width: 768px) {
         padding-top: 12rem;
         padding-bottom: 12rem;
-
-        h1 {
-            font-size: 3rem;
-        }
     }
 }

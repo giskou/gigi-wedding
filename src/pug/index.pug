@@ -5,8 +5,8 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='Giota&Giannis Wedding Webpage')
+        meta(name='author', content='Giannis Skoulis')
 
         title Giota & Giannis are getting married ... Again!
 
@@ -31,61 +31,62 @@ html(lang='en')
 
     body
 
-        header.header.position-fixed.leaves
+        header.header.position-fixed.top-0.start-0.leaves
 
         header.masthead#top
-            .row
             .row
                 .col
                     .container.position-relative.justify-content-center
                         .text-center.text-white#header-text
-                            h1.display-1.caligraphy Save The Date.
-                            h3.display-4 We are doing it ... again!
-                            p More information coming soon.
+                            h1.display-1.caligraphy Giota & Giannis
+                            h1.display-6 Are getting married. Again!
+                            h1.display-3#countdown
 
         div.content
             section.features-icons.text-center
-                .container
+                .container.my-5
                     .row
                         .col
                             .features-icons-item.mx-auto
                                 .features-icons-icon.d-flex
-                                    i.bi-calendar-event.m-auto.text-primary
-                                h1 When?
-                                h3
-                                    a(href='/assets/wedding.ics') 13 July 2024
-                        .col
-                            .features-icons-item.mx-auto
-                                .features-icons-icon.d-flex
-                                    i.bi-pin-map.m-auto.text-primary
-                                h1 Where?
-                                h3
-                                    a(href='https://maps.app.goo.gl/MJPCTxRkZtHoQRJi8') Volos, Greece
-            section.features-icons.text-center
-                .container
-                    .row
-                        .col
-                            .features-icons-item.mx-auto
-                                .features-icons-icon.d-flex
-                                    i.bi-calendar-event.m-auto.text-primary
+                                    i.bi-calendar-event.m-auto.fs-1.text-primary
                                 h3 When?
                                 h5
                                     a(href='/assets/wedding.ics') 13 July 2024
                         .col
                             .features-icons-item.mx-auto
                                 .features-icons-icon.d-flex
-                                    i.bi-pin-map.m-auto.text-primary
+                                    i.bi-pin-map.m-auto.fs-1.text-primary
                                 h3 Where?
                                 h5
                                     a(href='https://maps.app.goo.gl/MJPCTxRkZtHoQRJi8') Volos, Greece
+            section.story
+                .container-fluid.p-0
+                    .row
+                        .col.text-center.mb-2.showcase-text
+                            h2.mb-4 Our Story
+                            p.lead.mb-1
+                                | Giota and Giannis met under some quite unexpected circumstances in Gothenburg, Sweden, back in 2015.
+                            p.lead.mb-1
+                                | He was living in Oslo, Norway. She was living in Freiburg, Germany.
+                                | Even though Giota was not very impressed initially, Giannis' dedication made her reconsider.
+                                | Their first year was mostly in remote, with Giannis visiting quite often.
+                                | As things started to get more serious, Giannis convinced Giota to move to Oslo, which happened in late 2016.
+                                | In December 2020, right before the pandemic was a thing, Giannis asked the question and Gota said yes!
+                            p.lead.mb-1
+                                | Fast forward some global lockdowns, pregnancies and civil weddings, we are now happy to invite you to the official "Greek" wedding.
+                            p.lead.mt-1
+                                | See you at the dance floor!
+
             section.internal-footer.text-center
                 .container
                     .row
-                        p.text-muted.small.mb-4.mb-lg-0 &copy; giskou 2023. All Rights Reserved.
+                        p.text-muted.small.mt-2.mb-5.mb-lg-0 &copy; giskou 2023. All Rights Reserved.
 
 
-        footer.footer.position-fixed.leaves
-            button(href='#top')
+        footer.footer.position-fixed.bottom-0.end-0.leaves
+            button.btn.btn-outline-success.btn-floating#btn-back-to-top
+                i.bi.bi-arrow-up
 
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
         script(src='js/scripts.js')

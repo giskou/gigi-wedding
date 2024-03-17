@@ -10820,10 +10820,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: lightgrey;
+}
+
+a {
+  position: relative;
+  z-index: 100;
+}
+
+.caligraphy {
+  font-family: "Sacramento";
+}
+
 div.content {
   margin-right: 6rem;
   margin-left: 6rem;
   margin-bottom: 6rem;
+  padding-top: 3rem;
 }
 
 .leaves {
@@ -10834,25 +10848,9 @@ div.content {
   height: 100%;
 }
 
-.features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-.features-icons .features-icons-item {
-  max-width: 20rem;
-}
-.features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
-}
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
-}
-
 header.header {
   background: url("../assets/img/header.png") left top no-repeat;
   background-position: top left;
-  top: 0;
-  left: 0;
   width: 75%;
 }
 @media (min-width: 768px) {
@@ -10866,13 +10864,8 @@ header.header {
   }
 }
 
-.caligraphy {
-  font-family: "Sacramento";
-  font-size: 5rem !important;
-}
-
 #header-text {
-  margin-top: 25%;
+  margin-top: 20%;
   margin-right: 8%;
   margin-left: 8%;
 }
@@ -10901,16 +10894,10 @@ header.masthead:before {
   left: 0;
   opacity: 0.5;
 }
-header.masthead h1, header.masthead .h1 {
-  font-size: 3rem;
-}
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
     padding-bottom: 12rem;
-  }
-  header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
   }
 }
 
@@ -10920,6 +10907,7 @@ header.masthead h1, header.masthead .h1 {
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   .showcase .showcase-text {
@@ -10927,42 +10915,9 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-.testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-.testimonials .testimonial-item {
-  max-width: 18rem;
-}
-.testimonials .testimonial-item img {
-  max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
-}
-
-.call-to-action {
-  position: relative;
-  background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-.call-to-action:before {
-  content: "";
-  position: absolute;
-  background-color: #1c375e;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-}
-
 footer.footer {
   background: url("../assets/img/footer.png") left top no-repeat;
   background-position: bottom right;
-  bottom: 0;
-  right: 0;
   width: 90%;
 }
 @media (min-width: 768px) {
@@ -10974,4 +10929,11 @@ footer.footer {
   footer.footer {
     width: 550px;
   }
+}
+
+footer.footer button#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }

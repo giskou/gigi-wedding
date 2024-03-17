@@ -2,11 +2,24 @@
 // Global
 // 
 
-// Use this file to add styling to your theme
+body {
+    background-color: lightgrey;
+}
+
+a {
+    position: relative;
+    z-index: 100;
+}
+
+.caligraphy {
+  font-family: 'Sacramento';
+}
+
 div.content {
     margin-right: 6rem;
     margin-left: 6rem;
     margin-bottom: 6rem;
+    padding-top: 3rem;
 }
 
 .leaves {
