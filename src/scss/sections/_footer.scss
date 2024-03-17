@@ -3,6 +3,16 @@
 // 
 
 footer.footer {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    background: url("../assets/img/footer.png") left top no-repeat;
+    background-position: bottom right;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+
+    @media (min-width: 768px) {
+        width: 500px;
+    }
+    @media (min-width: 1080px) {
+        width: 550px;
+    }
 }

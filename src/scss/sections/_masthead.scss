@@ -7,6 +7,18 @@
   font-size: 5rem !important;
 }
 
+#header-text {
+    margin-top: 25%;
+    margin-right: 8%;
+    margin-left: 8%;
+
+    @media (min-width: 768px) {
+        margin-top: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 header.masthead {
     position: relative;
     background: url('../assets/img/bg-masthead.jpg') no-repeat center center;

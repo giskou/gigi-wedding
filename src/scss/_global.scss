@@ -3,3 +3,16 @@
 // 
 
 // Use this file to add styling to your theme
+div.content {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    margin-bottom: 6rem;
+}
+
+.leaves {
+    background-size: contain !important;
+    background-color: transparent;
+    opacity: 0.8;
+    z-index: 10 !important;
+    height: 100%;
+}

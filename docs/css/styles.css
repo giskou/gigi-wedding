@@ -10820,6 +10820,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+div.content {
+  margin-right: 6rem;
+  margin-left: 6rem;
+  margin-bottom: 6rem;
+}
+
+.leaves {
+  background-size: contain !important;
+  background-color: transparent;
+  opacity: 0.8;
+  z-index: 10 !important;
+  height: 100%;
+}
+
 .features-icons {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -10834,9 +10848,40 @@ textarea.form-control-lg {
   font-size: 4.5rem;
 }
 
+header.header {
+  background: url("../assets/img/header.png") left top no-repeat;
+  background-position: top left;
+  top: 0;
+  left: 0;
+  width: 75%;
+}
+@media (min-width: 768px) {
+  header.header {
+    width: 500px;
+  }
+}
+@media (min-width: 1080px) {
+  header.header {
+    width: 550px;
+  }
+}
+
 .caligraphy {
   font-family: "Sacramento";
   font-size: 5rem !important;
+}
+
+#header-text {
+  margin-top: 25%;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+@media (min-width: 768px) {
+  #header-text {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 header.masthead {
@@ -10914,6 +10959,19 @@ header.masthead h1, header.masthead .h1 {
 }
 
 footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  background: url("../assets/img/footer.png") left top no-repeat;
+  background-position: bottom right;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  footer.footer {
+    width: 500px;
+  }
+}
+@media (min-width: 1080px) {
+  footer.footer {
+    width: 550px;
+  }
 }

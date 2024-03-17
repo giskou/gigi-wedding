@@ -31,50 +31,61 @@ html(lang='en')
 
     body
 
-        // Navigation
-        //nav.navbar.navbar-light.bg-light.static-top
-        //    .container
-        //        a.navbar-brand(href='#!') GiGi.Wedding
+        header.header.position-fixed.leaves
 
-        // Masthead
-        header.masthead
-            .container.position-relative
-                .row.justify-content-center
-                    .col-xl-6
-                        .text-center.text-white
-                            // Page heading
+        header.masthead#top
+            .row
+            .row
+                .col
+                    .container.position-relative.justify-content-center
+                        .text-center.text-white#header-text
                             h1.display-1.caligraphy Save The Date.
                             h3.display-4 We are doing it ... again!
                             p More information coming soon.
 
-        // Icons Grid
-        section.features-icons.bg-light.text-center
-            .container
-                .row
-                    .col
-                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i.bi-calendar-event.m-auto.text-primary
-                            h1 When?
-                            h3
-                                a(href='/assets/wedding.ics') 13 July 2024
-                    .col
-                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
-                            .features-icons-icon.d-flex
-                                i.bi-pin-map.m-auto.text-primary
-                            h1 Where?
-                            h3
-                                a(href='https://maps.app.goo.gl/MJPCTxRkZtHoQRJi8') Volos, Greece
-
-        // Footer
-        footer.footer.bg-light
-            .container
-                .row
-                    .col-lg-6.h-100.text-center.text-lg-start.my-auto
+        div.content
+            section.features-icons.text-center
+                .container
+                    .row
+                        .col
+                            .features-icons-item.mx-auto
+                                .features-icons-icon.d-flex
+                                    i.bi-calendar-event.m-auto.text-primary
+                                h1 When?
+                                h3
+                                    a(href='/assets/wedding.ics') 13 July 2024
+                        .col
+                            .features-icons-item.mx-auto
+                                .features-icons-icon.d-flex
+                                    i.bi-pin-map.m-auto.text-primary
+                                h1 Where?
+                                h3
+                                    a(href='https://maps.app.goo.gl/MJPCTxRkZtHoQRJi8') Volos, Greece
+            section.features-icons.text-center
+                .container
+                    .row
+                        .col
+                            .features-icons-item.mx-auto
+                                .features-icons-icon.d-flex
+                                    i.bi-calendar-event.m-auto.text-primary
+                                h3 When?
+                                h5
+                                    a(href='/assets/wedding.ics') 13 July 2024
+                        .col
+                            .features-icons-item.mx-auto
+                                .features-icons-icon.d-flex
+                                    i.bi-pin-map.m-auto.text-primary
+                                h3 Where?
+                                h5
+                                    a(href='https://maps.app.goo.gl/MJPCTxRkZtHoQRJi8') Volos, Greece
+            section.internal-footer.text-center
+                .container
+                    .row
                         p.text-muted.small.mb-4.mb-lg-0 &copy; giskou 2023. All Rights Reserved.
 
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
 
-        // Core theme JS
-        ecript(src='js/scripts.js')
+        footer.footer.position-fixed.leaves
+            button(href='#top')
+
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+        script(src='js/scripts.js')
