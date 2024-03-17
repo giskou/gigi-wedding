@@ -10834,10 +10834,16 @@ a {
 }
 
 div.content {
-  margin-right: 6rem;
-  margin-left: 6rem;
+  margin-right: 5.5rem;
+  margin-left: 5.5rem;
   margin-bottom: 6rem;
   padding-top: 3rem;
+}
+@media (min-width: 768px) {
+  div.content {
+    margin-right: 6rem;
+    margin-left: 6rem;
+  }
 }
 
 .leaves {
@@ -10846,6 +10852,10 @@ div.content {
   opacity: 0.8;
   z-index: 10 !important;
   height: 100%;
+}
+
+#when-where, #our-story {
+  scroll-margin-top: 8rem;
 }
 
 header.header {
@@ -10861,6 +10871,22 @@ header.header {
 @media (min-width: 1080px) {
   header.header {
     width: 550px;
+  }
+}
+
+.dropstart {
+  z-index: 1000;
+}
+.dropstart .dropdown-toggle::before {
+  display: none;
+}
+.dropstart button {
+  top: 16px;
+  right: 16px;
+}
+@media (min-width: 768px) {
+  .dropstart button {
+    font-size: 1rem;
   }
 }
 

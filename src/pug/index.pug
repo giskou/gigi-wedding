@@ -31,6 +31,15 @@ html(lang='en')
 
     body
 
+        div.button-group.dropstart
+            button.position-fixed.btn.btn-success.btn-floating.dropdown-toggle(type="button", data-bs-toggle="dropdown", aria-expanded="false")
+                i.bi.bi-list
+            ul.dropdown-menu.bg-green-subtle
+                li
+                    a.dropdown-item(href="#when-where") When? Where?
+                li
+                    a.dropdown-item(href="#our-story") Our Story
+
         header.header.position-fixed.top-0.start-0.leaves
 
         header.masthead#top
@@ -44,7 +53,7 @@ html(lang='en')
 
         div.content
             section.features-icons.text-center
-                .container.my-5
+                .container.py-5#when-where
                     .row
                         .col
                             .features-icons-item.mx-auto
@@ -60,7 +69,7 @@ html(lang='en')
                                 h3 Where?
                                 h5
                                     a(href='https://maps.app.goo.gl/MJPCTxRkZtHoQRJi8') Volos, Greece
-            section.story
+            section.story#our-story
                 .container-fluid.p-0
                     .row
                         .col.text-center.mb-2.showcase-text
@@ -82,7 +91,6 @@ html(lang='en')
                 .container
                     .row
                         p.text-muted.small.mt-2.mb-5.mb-lg-0 &copy; giskou 2023. All Rights Reserved.
-
 
         footer.footer.position-fixed.bottom-0.end-0.leaves
             button.btn.btn-outline-success.btn-floating#btn-back-to-top

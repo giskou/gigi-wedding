@@ -16,10 +16,15 @@ a {
 }
 
 div.content {
-    margin-right: 6rem;
-    margin-left: 6rem;
+    margin-right: 5.5rem;
+    margin-left: 5.5rem;
     margin-bottom: 6rem;
     padding-top: 3rem;
+
+    @media (min-width: 768px) {
+        margin-right: 6rem;
+        margin-left: 6rem;
+    }
 }
 
 .leaves {
@@ -28,4 +33,8 @@ div.content {
     opacity: 0.8;
     z-index: 10 !important;
     height: 100%;
+}
+
+#when-where, #our-story {
+    scroll-margin-top: 8rem;
 }

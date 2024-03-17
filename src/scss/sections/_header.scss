@@ -14,3 +14,18 @@ header.header {
         width: 550px;
     }
 }
+
+.dropstart {
+    z-index: 1000;
+    .dropdown-toggle::before {
+        display: none;
+    }
+    button {
+        top: 16px;
+        right: 16px;
+
+        @media (min-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+}
