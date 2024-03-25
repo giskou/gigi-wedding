@@ -26,8 +26,11 @@
         <div class="button-group dropstart">
             <button class="position-fixed btn btn-success btn-floating dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i></button>
             <ul class="dropdown-menu bg-green-subtle">
-                <li><a class="dropdown-item" href="#when-where">When? Where?</a></li>
-                <li><a class="dropdown-item" href="#our-story">Our Story</a></li>
+                <li><a class="dropdown-item" href="#story">⛪ Our Story</a></li>
+                <li><a class="dropdown-item" href="#timeline">📅 Timeline</a></li>
+                <li><a class="dropdown-item" href="#accommodation">🛌 Accommodation</a></li>
+                <li><a class="dropdown-item" href="#getting-there">✈ Getting There</a></li>
+                <li><a class="dropdown-item" href="#gifts">🎁 Gifts</a></li>
             </ul>
         </div>
         <header class="header position-fixed top-0 start-0 leaves"></header>
@@ -37,38 +40,21 @@
                     <div class="container position-relative justify-content-center">
                         <div class="text-center text-white" id="header-text">
                             <h1 class="display-1 caligraphy">Giota & Giannis</h1>
-                            <h1 class="display-6">Are getting married. Again!</h1>
-                            <h1 class="display-3" id="countdown"></h1>
+                            <h2 class="display-6">Are getting married. Again!</h2>
+                            <h3 class="display-6">
+                                <!-- a.link-info.link-opacity-75.link-underline.link-underline-opacity-10(href='/assets/wedding.ics') Saturday, 13th of July 2024.-->
+                                <a class="text-reset" href="/assets/wedding.ics">Saturday, 13th of July 2024.</a>
+                            </h3>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <div class="content">
-            <section class="features-icons text-center">
-                <div class="container py-5" id="when-where">
-                    <div class="row">
-                        <div class="col">
-                            <div class="features-icons-item mx-auto">
-                                <div class="features-icons-icon d-flex"><i class="bi-calendar-event m-auto fs-1 text-primary"></i></div>
-                                <h3>When?</h3>
-                                <h5><a href="/assets/wedding.ics">13 July 2024</a></h5>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="features-icons-item mx-auto">
-                                <div class="features-icons-icon d-flex"><i class="bi-pin-map m-auto fs-1 text-primary"></i></div>
-                                <h3>Where?</h3>
-                                <h5><a href="https://maps.app.goo.gl/MJPCTxRkZtHoQRJi8">Volos, Greece</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="story" id="our-story">
+            <section class="showcase">
                 <div class="container-fluid p-0">
-                    <div class="row">
-                        <div class="col text-center mb-2 showcase-text">
+                    <div class="row g-0 mb-5">
+                        <div class="col text-center showcase-text target" id="story">
                             <h2 class="mb-4">Our Story</h2>
                             <p class="lead mb-1">Giota and Giannis met under some quite unexpected circumstances in Gothenburg, Sweden, back in 2015.</p>
                             <p class="lead mb-1">He was living in Oslo, Norway. She was living in Freiburg, Germany. Even though Giota was not very impressed initially, Giannis' dedication made her reconsider. Their first year was mostly in remote, with Giannis visiting quite often. As things started to get more serious, Giannis convinced Giota to move to Oslo, which happened in late 2016. In December 2020, right before the pandemic was a thing, Giannis asked the question and Giota said yes!</p>
@@ -76,16 +62,152 @@
                             <p class="lead mt-1">See you at the dance floor!</p>
                         </div>
                     </div>
+                    <div class="row g-0 mb-5">
+                        <div class="col-lg-6 order-1 mb-4 showcase-img" style="background-image: radial-gradient(closest-side, transparent 80%, lightgray), url('assets/img/calendar.jpg')"></div>
+                        <div class="col-lg-6 order-2 mb-4 showcase-text">
+                            <div class="container-fluid px-4 target" id="timeline">
+                                <h3 class="mb-4">Timeline</h3>
+                                <p class="mb-1">
+                                    The main event will take place on Saturday the
+                                    <a href="/assets/wedding.ics">13th of July 2024.</a>
+                                </p>
+                                <p class="mb-1">
+                                    The clock is ticking ....
+                                    <countdown id="countdown"></countdown>
+                                </p>
+                                <br />
+                                <p class="mb-1">Here is the schedule for the day of the event. More details will be added soon.</p>
+                            </div>
+                            <div class="container-fluid ps-5 my-4">
+                                <ul class="timeline my-0 text-thin">
+                                    <li class="event" data-date="18:30 - 19:30">
+                                        <p>
+                                            Church Ceremony
+                                            <br />
+                                            <a class="icon-link muted" href="https://maps.app.goo.gl/REFpMLDxLpKhFhcn9" target="_blank" rel="noopener">
+                                                Ιερός Ναός Προφήτη Ηλία
+                                                <sup><i class="bi bi-box-arrow-up-right"></i></sup>
+                                            </a>
+                                        </p>
+                                    </li>
+                                    <li class="event" data-date="20:00 - 21:00">
+                                        <p>
+                                            Arrival at the Reception Venue and Welcome Drinks
+                                            <br />
+                                            <a class="muted" href="https://maps.app.goo.gl/ztwCSkXgLNxXoW4h7" target="_blank" rel="noopener">
+                                                Κτήμα Κωστοπούλου
+                                                <sup><i class="bi bi-box-arrow-up-right"></i></sup>
+                                            </a>
+                                        </p>
+                                    </li>
+                                    <li class="event" data-date="21:00 - 23:00"><p>Dinner</p></li>
+                                    <li class="event" data-date="23:00 - ??:??"><p>PARTY!!!!</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 mb-5">
+                        <div class="col-lg-6 order-2 mb-4 showcase-img">
+                            <div class="container-fluid map w-100"><iframe class="border-0" width="100%" height="100%" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.de/en/map/gigi-wedding_56231?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=false&amp;searchControl=false&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=false&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true&amp;fullscreenControl=null&amp;measureControl=false&amp;editinosmControl=false&amp;datalayers=470d2b42-3c4a-4527-b13b-704d03cfe873%2C583b6f10-42a9-4955-955d-9341703f574b#12/39.3500/22.9251"></iframe></div>
+                        </div>
+                        <div class="col-lg-6 order-1 mb-4 showcase-text">
+                            <div class="container-fluid px-4 target text-end" id="accommodation">
+                                <h3 class="mb-4">Accommodation</h3>
+                                <p class="mb-1">This is a list of some hotels that we recomend for your stay. You can also find a quick overview of those on the map</p>
+                                <ul class="list-group">
+                                    <a class="list-group-item list-group-action bg-transparent" href="https://salina-volos.com/en/" target="_blank" rel="noopener">
+                                        Salina Apartments
+                                        <br />
+                                        (Use discount code:
+                                        <text class="font-monospace text-reset">wedding24</text>
+                                        )
+                                    </a>
+                                    <a class="list-group-item list-group-action bg-transparent" href="https://volosfiloxenia.gr/en/home/" target="_blank" rel="noopener">Philoxenia</a>
+                                    <a class="list-group-item list-group-action bg-transparent" href="https://www.aegli.gr/" target="_blank" rel="noopener">Aegli</a>
+                                    <a class="list-group-item list-group-action bg-transparent" href="https://1910hotel.gr/" target="_blank" rel="noopener">1910 Lifestyle Hotel</a>
+                                    <a class="list-group-item list-group-action bg-transparent" href="https://www.volospalace.gr/" target="_blank" rel="noopener">Volos Palace</a>
+                                    <a class="list-group-item list-group-action bg-transparent" href="https://www.philippos.gr/en/" target="_blank" rel="noopener">Philippos Hotel</a>
+                                    <a class="list-group-item list-group-action bg-transparent" href="https://amhotels.gr/en/" target="_blank" rel="noopener">Park Hotel</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 mb-5">
+                        <div class="col-lg-6 order-1 mb-4 showcase-img" style="background-image: radial-gradient(closest-side, transparent 70%, lightgray), url('assets/img/transport.jpg')"></div>
+                        <div class="col-lg-6 order-2 mb-4 showcase-text">
+                            <div class="container-fluid px-4 target text-start" id="getting-there">
+                                <h3 class="my-4">Getting There</h3>
+                                <h5 class="my-4">✈ Airports</h5>
+                                <p class="my-1">There are 4 airports that can be used to get as close as possible to Volos.</p>
+                                <h6 class="my-2">ATH Athens</h6>
+                                <p>Connections with Car, Bus and Train</p>
+                                <h6 class="my-2">SKG Thessaloniki</h6>
+                                <p>Connections with Car, Bus and Train</p>
+                                <h6 class="my-2">JSI Skiathos</h6>
+                                <p>Connections with Boat. Also check Restplasser in Apollo.no</p>
+                                <h6 class="my-2">VOL Volos/N. Anchialos</h6>
+                                <p>Connections with local Bus which will get you to Volos in ~20min</p>
+                                <h5 class="my-4">🚗 Car</h5>
+                                <p class="my-1">From Thessaloniki, you drive south the main highway (A1) Until you find the exit for Volos/Velestino (E92). There are quite a few car rental places around the airport that are not included in any aggregated search website. Just spend some time finding their main webpages from their entries in the map. They are quite cheaper than the standard Hertz/Avis etc.</p>
+                                <p class="my-2">Similarly from Athens, you drive north the main highway (A1) Until you find the exit for N.Anchialos (30).</p>
+                                <h5 class="my-4">🚂 Train</h5>
+                                <p class="my-1">There is a connection to Larisa with only one line that runs 7 times a day, starting from 07:12, with the last scheduled train leaving at 23:22.</p>
+                                <p class="my-2">Coming from Thessaloniki or Athens, you can get the train that connects those two cities and change at Larisa.</p>
+                                <p class="my-2">
+                                    Tickets can be purchased from
+                                    <a href="https://tickets.hellenictrain.gr/dromologia/" target="_blank" rel="noopener">here.</a>
+                                    <sup><i class="bi bi-box-arrow-up-right"></i></sup>
+                                </p>
+                                <p class="my-2">In general, the public trust on the trains in Greece has been shaken a bit due to a horrible accident that happened last year. I would recommend a different way of transport.</p>
+                                <h5 class="my-4">🚌 Bus</h5>
+                                <p class="my-1">
+                                    There are connections to almost all major cities in Greece. You can check routes and get tickets
+                                    <a href="https://ktelvolou.e-ticketing.gr/Pages/Destinations.aspx" target="_blank" rel="noopener">here.</a>
+                                    <sup><i class="bi bi-box-arrow-up-right"></i></sup>
+                                </p>
+                                <h5 class="my-4">🚢 Boat</h5>
+                                <p class="my-1">There are tons of online webpages to get tickets for boats. Do a quick search and find what looks better for your 😊</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 mb-5">
+                        <div class="col-lg-6 order-2 mb-4 showcase-img" style="background-image: radial-gradient(closest-side, transparent 80%, lightgray), url('assets/img/gifts.jpg')"></div>
+                        <div class="col-lg-6 order-1 mb-4 showcase-text">
+                            <div class="container-fluid px-4 target text-end" id="gifts">
+                                <h3 class="my-4">Gifts</h3>
+                                <p class="my-1">Having you with us will be the best gift we can get! If however you want to contribute in the future of our growing family, you can toss your coin to one of the following directions.</p>
+                                <div class="my-4 card bg-transparent">
+                                    <div class="card-body text-center">
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Alpha Bank (EUR)</h6>
+                                        <p class="card-text">
+                                            Ioannis Skoulis
+                                            <br />
+                                            GR1901403100310002101418651
+                                            <br />
+                                            BIC/SWIFT: CRBAGRAA.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="my-2">Vipps is also an option for Norway residents. You know our phone numbers 😁</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="internal-footer text-center">
                 <div class="container">
-                    <div class="row"><p class="text-muted small mt-2 mb-5 mb-lg-0">&copy; giskou 2023. All Rights Reserved.</p></div>
+                    <div class="row">
+                        <p class="text-muted small mt-2 mb-5 mb-lg-0">
+                            &copy; giskou 2024
+                            <br />
+                            All Rights Reserved.
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
         <footer class="footer position-fixed bottom-0 end-0 leaves">
-            <button class="btn btn-outline-success btn-floating" id="btn-back-to-top"><i class="bi bi-arrow-up"></i></button>
+            <button class="btn btn-success btn-floating" id="btn-back-to-top"><i class="bi bi-arrow-up"></i></button>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>

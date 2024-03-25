@@ -36,9 +36,15 @@ html(lang='en')
                 i.bi.bi-list
             ul.dropdown-menu.bg-green-subtle
                 li
-                    a.dropdown-item(href="#when-where") When? Where?
+                    a.dropdown-item(href="#story") ⛪ Our Story
                 li
-                    a.dropdown-item(href="#our-story") Our Story
+                    a.dropdown-item(href="#timeline") 📅 Timeline
+                li
+                    a.dropdown-item(href="#accommodation") 🛌 Accommodation
+                li
+                    a.dropdown-item(href="#getting-there") ✈ Getting There
+                li
+                    a.dropdown-item(href="#gifts") 🎁 Gifts
 
         header.header.position-fixed.top-0.start-0.leaves
 
@@ -48,31 +54,16 @@ html(lang='en')
                     .container.position-relative.justify-content-center
                         .text-center.text-white#header-text
                             h1.display-1.caligraphy Giota & Giannis
-                            h1.display-6 Are getting married. Again!
-                            h1.display-3#countdown
+                            h2.display-6 Are getting married. Again!
+                            h3.display-6
+                                // a.link-info.link-opacity-75.link-underline.link-underline-opacity-10(href='/assets/wedding.ics') Saturday, 13th of July 2024.
+                                a.text-reset(href='/assets/wedding.ics') Saturday, 13th of July 2024.
 
         div.content
-            section.features-icons.text-center
-                .container.py-5#when-where
-                    .row
-                        .col
-                            .features-icons-item.mx-auto
-                                .features-icons-icon.d-flex
-                                    i.bi-calendar-event.m-auto.fs-1.text-primary
-                                h3 When?
-                                h5
-                                    a(href='/assets/wedding.ics') 13 July 2024
-                        .col
-                            .features-icons-item.mx-auto
-                                .features-icons-icon.d-flex
-                                    i.bi-pin-map.m-auto.fs-1.text-primary
-                                h3 Where?
-                                h5
-                                    a(href='https://maps.app.goo.gl/MJPCTxRkZtHoQRJi8') Volos, Greece
-            section.story#our-story
+            section.showcase
                 .container-fluid.p-0
-                    .row
-                        .col.text-center.mb-2.showcase-text
+                    .row.g-0.mb-5
+                        .col.text-center.showcase-text.target#story
                             h2.mb-4 Our Story
                             p.lead.mb-1
                                 | Giota and Giannis met under some quite unexpected circumstances in Gothenburg, Sweden, back in 2015.
@@ -86,11 +77,160 @@ html(lang='en')
                                 | Fast forward some global lockdowns, pregnancies and civil weddings, we are now happy to invite you to the official "Greek" wedding.
                             p.lead.mt-1
                                 | See you at the dance floor!
+                    .row.g-0.mb-5
+                        .col-lg-6.order-1.mb-4.showcase-img(style="background-image: radial-gradient(closest-side, transparent 80%, lightgray), url('assets/img/calendar.jpg');")
+                        .col-lg-6.order-2.mb-4.showcase-text
+                            .container-fluid.px-4.target#timeline
+                                h3.mb-4 Timeline
+                                p.mb-1
+                                    | The main event will take place on Saturday the
+                                    a(href='/assets/wedding.ics') 13th of July 2024.
+                                p.mb-1
+                                    | The clock is ticking ....
+                                    countdown#countdown
+                                br
+                                p.mb-1
+                                    | Here is the schedule for the day of the event. More details will be added soon.
+                            .container-fluid.ps-5.my-4
+                                ul.timeline.my-0.text-thin
+                                    li.event(data-date="18:30 - 19:30")
+                                        p 
+                                            | Church Ceremony
+                                            br
+                                            a.icon-link.muted(href='https://maps.app.goo.gl/REFpMLDxLpKhFhcn9' target='_blank' rel='noopener')
+                                                | Ιερός Ναός Προφήτη Ηλία
+                                                sup
+                                                    i.bi.bi-box-arrow-up-right
+                                    li.event(data-date="20:00 - 21:00")
+                                        p 
+                                            | Arrival at the Reception Venue and Welcome Drinks
+                                            br
+                                            a.muted(href='https://maps.app.goo.gl/ztwCSkXgLNxXoW4h7' target='_blank' rel='noopener')
+                                                | Κτήμα Κωστοπούλου
+                                                sup
+                                                    i.bi.bi-box-arrow-up-right
+                                    li.event(data-date="21:00 - 23:00")
+                                        p Dinner
+                                    li.event(data-date="23:00 - ??:??")
+                                        p PARTY!!!!
+                    .row.g-0.mb-5
+                        .col-lg-6.order-2.mb-4.showcase-img
+                            .container-fluid.map.w-100
+                                iframe.border-0(
+                                    width='100%'
+                                    height='100%'
+                                    frameborder='0'
+                                    allowfullscreen
+                                    allow='geolocation'
+                                    src='//umap.openstreetmap.de/en/map/gigi-wedding_56231?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=true&fullscreenControl=null&measureControl=false&editinosmControl=false&datalayers=470d2b42-3c4a-4527-b13b-704d03cfe873%2C583b6f10-42a9-4955-955d-9341703f574b#12/39.3500/22.9251')
+                        .col-lg-6.order-1.mb-4.showcase-text
+                            .container-fluid.px-4.target.text-end#accommodation
+                                h3.mb-4 Accommodation
+                                p.mb-1
+                                    | This is a list of some hotels that we recomend for your stay.
+                                    | You can also find a quick overview of those on the map
+                                ul.list-group
+                                    a.list-group-item.list-group-action.bg-transparent(href='https://salina-volos.com/en/' target='_blank' rel='noopener')
+                                        | Salina Apartments
+                                        br
+                                        | (Use discount code: 
+                                        text.font-monospace.text-reset wedding24
+                                        | )
+                                    a.list-group-item.list-group-action.bg-transparent(href='https://volosfiloxenia.gr/en/home/' target='_blank' rel='noopener')
+                                        | Philoxenia
+                                    a.list-group-item.list-group-action.bg-transparent(href='https://www.aegli.gr/' target='_blank' rel='noopener')
+                                        | Aegli
+                                    a.list-group-item.list-group-action.bg-transparent(href='https://1910hotel.gr/' target='_blank' rel='noopener')
+                                        | 1910 Lifestyle Hotel
+                                    a.list-group-item.list-group-action.bg-transparent(href='https://www.volospalace.gr/' target='_blank' rel='noopener')
+                                        | Volos Palace
+                                    a.list-group-item.list-group-action.bg-transparent(href='https://www.philippos.gr/en/' target='_blank' rel='noopener')
+                                        | Philippos Hotel
+                                    a.list-group-item.list-group-action.bg-transparent(href='https://amhotels.gr/en/' target='_blank' rel='noopener')
+                                        | Park Hotel
+                    .row.g-0.mb-5
+                        .col-lg-6.order-1.mb-4.showcase-img(style="background-image: radial-gradient(closest-side, transparent 70%, lightgray), url('assets/img/transport.jpg');")
+                        .col-lg-6.order-2.mb-4.showcase-text
+                            .container-fluid.px-4.target.text-start#getting-there
+                                h3.my-4 Getting There
+
+                                h5.my-4 ✈ Airports
+                                p.my-1
+                                    | There are 4 airports that can be used to get as close as possible to Volos.
+                                h6.my-2 ATH Athens
+                                p Connections with Car, Bus and Train
+                                h6.my-2 SKG Thessaloniki
+                                p Connections with Car, Bus and Train
+                                h6.my-2 JSI Skiathos
+                                p Connections with Boat. Also check Restplasser in Apollo.no
+                                h6.my-2 VOL Volos/N. Anchialos
+                                p Connections with local Bus which will get you to Volos in ~20min
+
+                                h5.my-4 🚗 Car
+                                p.my-1
+                                    | From Thessaloniki, you drive south the main highway (A1) Until you find the exit for Volos/Velestino (E92).
+                                    | There are quite a few car rental places around the airport that are not included in any
+                                    | aggregated search website. Just spend some time finding their main webpages from their entries in
+                                    | the map. They are quite cheaper than the standard Hertz/Avis etc.
+                                p.my-2
+                                    | Similarly from Athens, you drive north the main highway (A1) Until you find the exit for N.Anchialos (30). 
+
+                                h5.my-4 🚂 Train
+                                p.my-1
+                                    | There is a connection to Larisa with only one line that runs 7 times a day, starting from 07:12, with the
+                                    | last scheduled train leaving at 23:22.
+                                p.my-2
+                                    | Coming from Thessaloniki or Athens, you can get the train that connects those two cities and change at Larisa.
+                                p.my-2
+                                    | Tickets can be purchased from
+                                    a(href='https://tickets.hellenictrain.gr/dromologia/' target='_blank' rel='noopener') here.
+                                    sup
+                                        i.bi.bi-box-arrow-up-right
+                                p.my-2
+                                    | In general, the public trust on the trains in Greece has been shaken a bit due to a horrible
+                                    | accident that happened last year. I would recommend a different way of transport.
+
+                                h5.my-4 🚌 Bus
+                                p.my-1
+                                    | There are connections to almost all major cities in Greece.
+                                    | You can check routes and get tickets
+                                    a(href='https://ktelvolou.e-ticketing.gr/Pages/Destinations.aspx' target='_blank' rel='noopener') here.
+                                    sup
+                                        i.bi.bi-box-arrow-up-right
+
+                                h5.my-4 🚢 Boat
+                                p.my-1
+                                    | There are tons of online webpages to get tickets for boats.
+                                    | Do a quick search and find what looks better for your 😊
+                    .row.g-0.mb-5
+                        .col-lg-6.order-2.mb-4.showcase-img(style="background-image: radial-gradient(closest-side, transparent 80%, lightgray), url('assets/img/gifts.jpg');")
+                        .col-lg-6.order-1.mb-4.showcase-text
+                            .container-fluid.px-4.target.text-end#gifts
+                                h3.my-4 Gifts
+                                p.my-1
+                                    | Having you with us will be the best gift we can get!
+                                    | If however you want to contribute in the future of our
+                                    | growing family, you can toss your coin to one of the following directions.
+                                div.my-4.card.bg-transparent
+                                    div.card-body.text-center
+                                        h6.card-subtitle.mb-2.text-body-secondary Alpha Bank (EUR)
+                                        p.card-text
+                                            | Ioannis Skoulis
+                                            br
+                                            | GR1901403100310002101418651
+                                            br
+                                            | BIC/SWIFT: CRBAGRAA.
+                                p.my-2
+                                    | Vipps is also an option for Norway residents.
+                                    | You know our phone numbers 😁
 
             section.internal-footer.text-center
                 .container
                     .row
-                        p.text-muted.small.mt-2.mb-5.mb-lg-0 &copy; giskou 2024. All Rights Reserved.
+                        p.text-muted.small.mt-2.mb-5.mb-lg-0
+                            | &copy; giskou 2024
+                            br
+                            | All Rights Reserved.
 
         footer.footer.position-fixed.bottom-0.end-0.leaves
             button.btn.btn-success.btn-floating#btn-back-to-top

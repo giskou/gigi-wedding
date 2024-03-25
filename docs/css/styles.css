@@ -10827,6 +10827,7 @@ body {
 a {
   position: relative;
   z-index: 100;
+  color: mediumslateblue;
 }
 
 .caligraphy {
@@ -10854,8 +10855,24 @@ div.content {
   height: 100%;
 }
 
-#when-where, #our-story {
+.target {
   scroll-margin-top: 8rem;
+}
+@media (min-width: 576px) {
+  .target {
+    scroll-margin-top: 10rem;
+  }
+}
+@media (min-width: 992px) {
+  .target {
+    scroll-margin-top: 12rem;
+  }
+}
+
+.map {
+  height: 400px !important;
+  position: relative;
+  z-index: 100;
 }
 
 header.header {
@@ -10927,18 +10944,85 @@ header.masthead:before {
   }
 }
 
-.showcase .showcase-text {
-  padding: 3rem;
-}
 .showcase .showcase-img {
-  min-height: 30rem;
+  min-height: 15rem;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
+@media (max-width: 992px) {
+  .showcase #accommodation,
+  .showcase #getting-there,
+  .showcase #gifts,
+  .showcase #timeline {
+    text-align: center !important;
   }
+}
+
+.timeline {
+  border-left: 3px solid #727cf5;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  padding: 50px;
+  margin-left: 100px;
+  list-style: none;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .timeline {
+    padding: 25px;
+    margin-left: auto;
+  }
+}
+.timeline .event {
+  padding-bottom: 1rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .timeline .event {
+    padding-top: 1rem;
+  }
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -207px;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+@media (max-width: 767px) {
+  .timeline .event:before {
+    left: 0px;
+    text-align: left;
+  }
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 3px #727cf5;
+  left: -55.8px;
+  background: #fff;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  content: "";
+  top: 5px;
+}
+@media (max-width: 767px) {
+  .timeline .event:after {
+    left: -30.8px;
+  }
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
 }
 
 footer.footer {

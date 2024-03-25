@@ -9,6 +9,7 @@ body {
 a {
     position: relative;
     z-index: 100;
+    color: mediumslateblue;
 }
 
 .caligraphy {
@@ -21,7 +22,7 @@ div.content {
     margin-bottom: 6rem;
     padding-top: 3rem;
 
-    @media (min-width: 768px) {
+    @include media-breakpoint-up(md) {
         margin-right: 6rem;
         margin-left: 6rem;
     }
@@ -35,6 +36,19 @@ div.content {
     height: 100%;
 }
 
-#when-where, #our-story {
+.target {
     scroll-margin-top: 8rem;
+
+    @include media-breakpoint-up(sm) {
+        scroll-margin-top: 10rem;
+    }
+    @include media-breakpoint-up(lg) {
+        scroll-margin-top: 12rem;
+    }
+}
+
+.map {
+    height: 400px !important;
+    position: relative;
+    z-index: 100;
 }
