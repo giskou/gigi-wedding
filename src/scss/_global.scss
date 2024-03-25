@@ -17,11 +17,15 @@ a {
 }
 
 div.content {
-    margin-right: 5.5rem;
-    margin-left: 5.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     margin-bottom: 6rem;
     padding-top: 3rem;
 
+    @include media-breakpoint-up(sm) {
+        margin-right: 5.5rem;
+        margin-left: 5.5rem;
+    }
     @include media-breakpoint-up(md) {
         margin-right: 6rem;
         margin-left: 6rem;

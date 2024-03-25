@@ -10835,10 +10835,16 @@ a {
 }
 
 div.content {
-  margin-right: 5.5rem;
-  margin-left: 5.5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   margin-bottom: 6rem;
   padding-top: 3rem;
+}
+@media (min-width: 576px) {
+  div.content {
+    margin-right: 5.5rem;
+    margin-left: 5.5rem;
+  }
 }
 @media (min-width: 768px) {
   div.content {
