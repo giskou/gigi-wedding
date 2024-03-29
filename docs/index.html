@@ -28,12 +28,14 @@
             <ul class="dropdown-menu bg-green-subtle">
                 <li><a class="dropdown-item" href="#story">⛪ Our Story</a></li>
                 <li><a class="dropdown-item" href="#timeline">📅 Timeline</a></li>
+                <li><a class="dropdown-item" href="#map">🗺 Map</a></li>
                 <li><a class="dropdown-item" href="#accommodation">🛌 Accommodation</a></li>
                 <li><a class="dropdown-item" href="#getting-there">✈ Getting There</a></li>
                 <li><a class="dropdown-item" href="#gifts">🎁 Gifts</a></li>
             </ul>
         </div>
         <header class="header position-fixed top-0 start-0 leaves"></header>
+        <div class="position-fixed top-50 start-50 translate-middle background" style="background-image: url('/assets/img/logo.png')"></div>
         <header class="masthead" id="top">
             <div class="row">
                 <div class="col">
@@ -41,10 +43,7 @@
                         <div class="text-center text-white" id="header-text">
                             <h1 class="display-1 caligraphy">Giota & Giannis</h1>
                             <h2 class="display-6">Are getting married. Again!</h2>
-                            <h3 class="display-6">
-                                <!-- a.link-info.link-opacity-75.link-underline.link-underline-opacity-10(href='/assets/wedding.ics') Saturday, 13th of July 2024.-->
-                                <a class="text-reset" href="/assets/wedding.ics">Saturday, 13th of July 2024.</a>
-                            </h3>
+                            <h3 class="display-6"><a class="text-reset" href="/assets/wedding.ics">Saturday, 13th of July 2024.</a></h3>
                         </div>
                     </div>
                 </div>
@@ -53,19 +52,19 @@
         <div class="content">
             <section class="showcase">
                 <div class="container-fluid p-0">
-                    <div class="row g-0 mb-5">
-                        <div class="col text-center showcase-text target" id="story">
+                    <div class="row g-0 mb-3 target" id="story">
+                        <div class="col text-center mb-3 showcase-text">
                             <h2 class="mb-4">Our Story</h2>
                             <p class="lead mb-1">Giota and Giannis met under some quite unexpected circumstances in Gothenburg, Sweden, back in 2015.</p>
                             <p class="lead mb-1">He was living in Oslo, Norway. She was living in Freiburg, Germany. Even though Giota was not very impressed initially, Giannis' dedication made her reconsider. Their first year was mostly in remote, with Giannis visiting quite often. As things started to get more serious, Giannis convinced Giota to move to Oslo, which happened in late 2016. In December 2020, right before the pandemic was a thing, Giannis asked the question and Giota said yes!</p>
                             <p class="lead mb-1">Fast forward some global lockdowns, pregnancies and civil weddings, we are now happy to invite you to the official "Greek" wedding.</p>
                             <p class="lead mt-1">See you at the dance floor!</p>
+                            <img class="mt-2" src="/assets/img/logo.png" height="150" />
                         </div>
                     </div>
-                    <div class="row g-0 mb-5">
-                        <div class="col-lg-6 order-1 mb-4 showcase-img" style="background-image: radial-gradient(closest-side, transparent 80%, lightgray), url('assets/img/calendar.jpg')"></div>
-                        <div class="col-lg-6 order-2 mb-4 showcase-text">
-                            <div class="container-fluid px-4 target" id="timeline">
+                    <div class="row g-0 mb-3 target" id="timeline">
+                        <div class="col text-center mb-3 showcase-text">
+                            <div class="container-fluid px-4">
                                 <h3 class="mb-4">Timeline</h3>
                                 <p class="mb-1">
                                     The main event will take place on Saturday the
@@ -108,15 +107,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row g-0 mb-5">
-                        <div class="col-lg-6 order-2 mb-4 showcase-img">
-                            <div class="container-fluid map w-100"><iframe class="border-0" width="100%" height="100%" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.de/en/map/gigi-wedding_56231?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=false&amp;searchControl=false&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=false&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true&amp;fullscreenControl=null&amp;measureControl=false&amp;editinosmControl=false&amp;datalayers=470d2b42-3c4a-4527-b13b-704d03cfe873%2C583b6f10-42a9-4955-955d-9341703f574b#12/39.3500/22.9251"></iframe></div>
+                    <div class="row g-0 mb-3 target" id="map">
+                        <div class="col text-center mb-3 showcase-text">
+                            <div class="container-fluid map w-75"><iframe class="border-0" width="100%" height="100%" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.de/en/map/gigi-wedding_56231?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=false&amp;searchControl=false&amp;tilelayersControl=false&amp;embedControl=false&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=false&amp;starControl=false&amp;editinosmControl=false&amp;measureControl=false&amp;locateControl=false&amp;datalayers=470d2b42-3c4a-4527-b13b-704d03cfe873%2C583b6f10-42a9-4955-955d-9341703f574b%2C7069a650-e2a7-49ba-a0b2-8f9bce044b15#12/39.3564/22.9363"></iframe></div>
                         </div>
-                        <div class="col-lg-6 order-1 mb-4 showcase-text">
-                            <div class="container-fluid px-4 target text-end" id="accommodation">
-                                <h3 class="mb-4">Accommodation</h3>
+                    </div>
+                    <div class="row g-0 mb-3 target" id="accommodation">
+                        <div class="col text-center mb-3 showcase-text">
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#collapse-accommodation" aria-expanded="false" aria-controls="collapse-accommodation">
+                                <h3 class="mb-2">
+                                    Accommodation
+                                    <i class="bi bi-chevron-expand"></i>
+                                </h3>
+                            </button>
+                            <div class="collapse-body collapse target" id="collapse-accommodation">
                                 <p class="mb-1">This is a list of some hotels that we recommend for your stay. You can also find a quick overview of those on the map</p>
-                                <ul class="list-group">
+                                <ul class="list-group position-relative" style="left: 15%; width: 70%">
                                     <a class="list-group-item list-group-action bg-transparent" href="https://salina-volos.com/en/" target="_blank" rel="noopener">
                                         Salina Apartments
                                         <br />
@@ -134,12 +140,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row g-0 mb-5">
-                        <div class="col-lg-6 order-1 mb-4 showcase-img" style="background-image: radial-gradient(closest-side, transparent 70%, lightgray), url('assets/img/transport.jpg')"></div>
-                        <div class="col-lg-6 order-2 mb-4 showcase-text">
-                            <div class="container-fluid px-4 target text-start" id="getting-there">
-                                <h3 class="my-4">Getting There</h3>
-                                <h5 class="my-4">✈ Airports</h5>
+                    <div class="row g-0 mb-3 target" id="getting-there">
+                        <div class="col text-center mb-3 showcase-text">
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#collapse-getting-there" aria-expanded="false" aria-controls="collapse-getting-there">
+                                <h3 class="mb-2">
+                                    Getting There
+                                    <i class="bi bi-chevron-expand"></i>
+                                </h3>
+                            </button>
+                            <div class="collapse-body collapse target" id="collapse-getting-there">
+                                <h5 class="my-3">✈ Airports</h5>
                                 <p class="my-1">There are 4 airports that can be used to get as close as possible to Volos.</p>
                                 <h6 class="my-2">ATH Athens</h6>
                                 <p>Connections with Car, Bus and Train</p>
@@ -149,11 +159,12 @@
                                 <p>Connections with Boat. Also check Restplasser in Apollo.no</p>
                                 <h6 class="my-2">VOL Volos/N. Anchialos</h6>
                                 <p>Connections with local Bus which will get you to Volos in ~20min</p>
-                                <h5 class="my-4">🚗 Car</h5>
+                                <h5 class="my-3">🚗 Car</h5>
                                 <p class="my-1">From Thessaloniki, you drive south the main highway (A1) Until you find the exit for Volos/Velestino (E92). There are quite a few car rental places around the airport that are not included in any aggregated search website. Just spend some time finding their main webpages from their entries in the map. They are quite cheaper than the standard Hertz/Avis etc.</p>
                                 <p class="my-2">Similarly from Athens, you drive north the main highway (A1) Until you find the exit for N.Anchialos (30).</p>
-                                <h5 class="my-4">🚂 Train</h5>
-                                <p class="my-1">There is a connection to Larisa with only one line that runs 7 times a day, starting from 07:12, with the last scheduled train leaving at 23:22.</p>
+                                <h5 class="my-3">🚂 Train</h5>
+                                <p class="my-1 text-decoration-line-through">There is a connection to Larisa with only one line that runs 7 times a day, starting from 07:12, with the last scheduled train leaving at 23:22.</p>
+                                <p class="my-1">Unfortunately there is no train routes between Larisa and Volos. The service has not recovered since the (not so) recent flooding. There is bus for train offered by the train company but standard buses are better and recommended.</p>
                                 <p class="my-2">Coming from Thessaloniki or Athens, you can get the train that connects those two cities and change at Larisa.</p>
                                 <p class="my-2">
                                     Tickets can be purchased from
@@ -161,47 +172,57 @@
                                     <sup><i class="bi bi-box-arrow-up-right"></i></sup>
                                 </p>
                                 <p class="my-2">In general, the public trust on the trains in Greece has been shaken a bit due to a horrible accident that happened last year. I would recommend a different way of transport.</p>
-                                <h5 class="my-4">🚌 Bus</h5>
+                                <h5 class="my-3">🚌 Bus</h5>
                                 <p class="my-1">
                                     There are connections to almost all major cities in Greece. You can check routes and get tickets
                                     <a href="https://ktelvolou.e-ticketing.gr/Pages/Destinations.aspx" target="_blank" rel="noopener">here.</a>
                                     <sup><i class="bi bi-box-arrow-up-right"></i></sup>
                                 </p>
-                                <h5 class="my-4">🚢 Boat</h5>
+                                <h5 class="my-3">🚢 Boat</h5>
                                 <p class="my-1">There are tons of online webpages to get tickets for boats. Do a quick search and find what looks better for your 😊</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-0 mb-5">
-                        <div class="col-lg-6 order-2 mb-4 showcase-img" style="background-image: radial-gradient(closest-side, transparent 80%, lightgray), url('assets/img/gifts.jpg')"></div>
-                        <div class="col-lg-6 order-1 mb-4 showcase-text">
-                            <div class="container-fluid px-4 target text-end" id="gifts">
-                                <h3 class="my-4">Gifts</h3>
+                    <div class="row g-0 mb-3 target" id="gifts">
+                        <div class="col text-center mb-3 showcase-text">
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#collapse-gifts" aria-expanded="false" aria-controls="collapse-gifts">
+                                <h3 class="mb-2">
+                                    Gifts
+                                    <i class="bi bi-chevron-expand"></i>
+                                </h3>
+                            </button>
+                            <div class="collapse-body collapse target" id="collapse-gifts">
                                 <p class="my-1">Having you with us will be the best gift we can get! If however you want to contribute in the future of our growing family, you can toss your coin to one of the following directions.</p>
-                                <div class="my-4 card bg-transparent">
-                                    <div class="card-body text-center">
-                                        <h6 class="card-subtitle mb-2 text-body-secondary">Alpha Bank (EUR)</h6>
-                                        <p class="card-text">
-                                            Ioannis Skoulis
-                                            <br />
-                                            GR1901403100310002101418651
-                                            <br />
-                                            BIC/SWIFT: CRBAGRAA
-                                        </p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="card bg-transparent m-2">
+                                            <div class="card-body text-center">
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Alpha Bank (EUR)</h6>
+                                                <p class="card-text">
+                                                    Ioannis Skoulis
+                                                    <br />
+                                                    GR1901403100310002101418651
+                                                    <br />
+                                                    BIC/SWIFT: CRBAGRAA
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="my-4 card bg-transparent">
-                                    <div class="card-body text-center">
-                                        <h6 class="card-subtitle mb-2 text-body-secondary">Eurobank (EUR)</h6>
-                                        <p class="card-text">
-                                            Ioannis Skoulis
-                                            <br />
-                                            0026.0018.05.0102454268
-                                            <br />
-                                            GR2302600180000050102454268
-                                            <br />
-                                            BIC/SWIFT: ERBKGRAA
-                                        </p>
+                                    <div class="col-sm-6">
+                                        <div class="card bg-transparent m-2">
+                                            <div class="card-body text-center">
+                                                <h6 class="card-subtitle mb-2 text-body-secondary">Eurobank (EUR)</h6>
+                                                <p class="card-text">
+                                                    Ioannis Skoulis
+                                                    <br />
+                                                    0026.0018.05.0102454268
+                                                    <br />
+                                                    GR2302600180000050102454268
+                                                    <br />
+                                                    BIC/SWIFT: ERBKGRAA
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <p class="my-2">Vipps is also an option for Norway residents. You know our phone numbers 😁</p>
@@ -211,8 +232,9 @@
                 </div>
             </section>
             <section class="internal-footer text-center">
-                <div class="container">
-                    <div class="row">
+                <div class="row">
+                    <div class="col">
+                        <img class="mt-2" src="/assets/img/logo.png" height="150" />
                         <p class="text-muted small mt-2 mb-5 mb-lg-0">
                             &copy; giskou 2024
                             <br />

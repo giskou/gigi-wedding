@@ -10852,6 +10852,13 @@ div.content {
     margin-left: 6rem;
   }
 }
+@media (min-width: 992px) {
+  div.content {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .leaves {
   background-size: contain !important;
@@ -10859,6 +10866,22 @@ div.content {
   opacity: 0.8;
   z-index: 10 !important;
   height: 100%;
+}
+
+.background {
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: 0.08;
+  z-index: -1 !important;
+  height: 30rem;
+  width: 30rem;
+}
+@media (min-width: 992px) {
+  .background {
+    height: 50rem;
+    width: 50rem;
+  }
 }
 
 .target {
@@ -10878,7 +10901,12 @@ div.content {
 .map {
   height: 400px !important;
   position: relative;
-  z-index: 100;
+  z-index: 15;
+}
+
+button {
+  position: relative;
+  z-index: 15;
 }
 
 header.header {
@@ -10956,14 +10984,6 @@ header.masthead:before {
   background-position: center;
   background-repeat: no-repeat;
 }
-@media (max-width: 992px) {
-  .showcase #accommodation,
-  .showcase #getting-there,
-  .showcase #gifts,
-  .showcase #timeline {
-    text-align: center !important;
-  }
-}
 
 .timeline {
   border-left: 3px solid #727cf5;
@@ -10971,7 +10991,7 @@ header.masthead:before {
   border-top-right-radius: 4px;
   position: relative;
   padding: 50px;
-  margin-left: 100px;
+  margin-left: 200px;
   list-style: none;
   text-align: left;
 }

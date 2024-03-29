@@ -9,13 +9,4 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-
-    #accommodation,
-    #getting-there,
-    #gifts,
-    #timeline {
-        @media (max-width: 992px) {
-            text-align: center !important;
-        }
-    }
 }

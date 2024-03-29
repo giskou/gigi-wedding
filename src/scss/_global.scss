@@ -30,6 +30,11 @@ div.content {
         margin-right: 6rem;
         margin-left: 6rem;
     }
+    @include media-breakpoint-up(lg) {
+        width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .leaves {
@@ -38,6 +43,21 @@ div.content {
     opacity: 0.8;
     z-index: 10 !important;
     height: 100%;
+}
+
+.background {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    opacity: 0.08;
+    z-index: -1 !important;
+    height: 30rem;
+    width: 30rem;
+
+    @include media-breakpoint-up(lg) {
+        height: 50rem;
+        width: 50rem;
+    }
 }
 
 .target {
@@ -54,5 +74,10 @@ div.content {
 .map {
     height: 400px !important;
     position: relative;
-    z-index: 100;
+    z-index: 15;
+}
+
+button {
+    position: relative;
+    z-index: 15;
 }
